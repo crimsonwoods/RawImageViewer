@@ -12,12 +12,20 @@ namespace RawImageViewer
         {
             YUYV,
             UYVY,
+            RGBA,
+            BGRA,
+            ARGB,
+            ABGR,
         }
 
         private static Dictionary<PixelFormat, IImageDecoder> decoders = new Dictionary<PixelFormat, IImageDecoder>()
         {
             { PixelFormat.YUYV, new YUYVDecoder() },
             { PixelFormat.UYVY, new UYVYDecoder() },
+            { PixelFormat.RGBA, new RGBADecoder() },
+            { PixelFormat.BGRA, new BGRADecoder() },
+            { PixelFormat.ARGB, new ARGBDecoder() },
+            { PixelFormat.ABGR, new ABGRDecoder() },
         };
 
         public static IEnumerable<PixelFormat> getSupportedPixelFormats()

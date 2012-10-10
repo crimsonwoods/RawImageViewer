@@ -68,6 +68,10 @@
     </Compile>
     <Compile Include="YUYVDecoder.cs" />
     <Compile Include="UYVYDecoder.cs" />
+    <Compile Include="RGBADecoder.cs" />
+    <Compile Include="BGRADecoder.cs" />
+    <Compile Include="ARGBDecoder.cs" />
+    <Compile Include="ABGRDecoder.cs" />
     <EmbeddedResource Include="AboutBox.resx">
       <DependentUpon>AboutBox.cs</DependentUpon>
     </EmbeddedResource>
