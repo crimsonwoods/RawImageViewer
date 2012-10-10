@@ -10,3 +10,7 @@ Pixel data is ordered by specified format.
 ### Supported Pixel Formats
 - YUYV (also known as 'YUV 4:2:2')
 - UYUV
+- RGBA
+- BGRA
+- ARGB
+- ABGR
