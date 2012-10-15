@@ -34,7 +34,7 @@ namespace RawImageViewer
                         int pix = 0;
                         for (int y = 0; y < height; ++y)
                         {
-                            for (int x = 0; x < width; x += 2)
+                            for (int x = 0; x < width; ++x)
                             {
                                 byte r = reader.ReadByte();
                                 byte g = reader.ReadByte();
